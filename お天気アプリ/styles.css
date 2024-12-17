@@ -1,0 +1,102 @@
+/* 全体のリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 背景 */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #87CEEB, #ffffff);
+  background-attachment: fixed;
+}
+
+/* コンテナ */
+.weather-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* 見出し */
+.weather-container h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 入力欄 */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  outline: none;
+}
+
+/* ボタン */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  color: white;
+  background: linear-gradient(45deg, #007BFF, #0056b3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #003d7a);
+  transform: translateY(-5px);
+}
+
+/* 天気情報の出力エリア */
+#weather-output {
+  margin-top: 20px;
+  text-align: left;
+  color: #555;
+  font-size: 1em;
+}
+
+#weather-output h2 {
+  font-size: 3em;
+  color: #007BFF;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#weather-output span {
+  font-size: 2em;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+#weather-output p {
+  margin: 5px 0;
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .weather-container {
+    padding: 15px 20px;
+  }
+
+  .weather-container h1 {
+    font-size: 1.5em;
+  }
+}
